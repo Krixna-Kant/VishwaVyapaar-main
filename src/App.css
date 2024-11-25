@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Varela+Round&display=swap');
+
+:root {
+  --color-cream: #FFF7D1;
+  --color-peach: #FFECC8;
+  --color-orange: #FFD09B;
+  --color-coral: #FFB0B0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
