@@ -10,6 +10,10 @@
   --primary-400: #36ADF7;
   --primary-500: #0B96E6;
   --primary-600: #0077CC;
+  --clr-primary: #0B96E6;
+  --clr-white: #ffffff;
+  --clr-glass: rgba(255, 255, 255, 0.12);
+  --clr-shadow: rgba(11, 150, 230, 0.25);
 
   /* Accent Colors */
   --accent-coral: #4fe1ec;

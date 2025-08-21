@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white/80 backdrop-blur-sm border-b border-[var(--glass-border)] px-6 py-3">
+    <nav className="bg-white shadow-sm px-6 py-3">
       <div className="container mx-auto flex justify-between items-center">
         {/* Navigation Links */}
         <div className="flex space-x-1">
