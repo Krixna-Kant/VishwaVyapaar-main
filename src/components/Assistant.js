@@ -4,7 +4,6 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { GEMINI_API_KEY } from '../config/api.config';
 import ReactMarkdown from 'react-markdown';
 
-// Initialize Gemini with error handling
 let genAI;
 try {
   genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
@@ -12,7 +11,6 @@ try {
   console.error('Error initializing Gemini:', error);
 }
 
-// Update the system prompt to enforce better formatting
 const SYSTEM_PROMPT = `You are VishwaVyapaar's AI Trade Assistant, an expert in international business expansion and trade.
 
 RESPONSE FORMATTING RULES:
@@ -227,7 +225,7 @@ const AIChatbot = () => {
       }
 
       // Generate response using Gemini
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       const prompt = `${SYSTEM_PROMPT}\n\nUser: ${text}\n\nAssistant:`;
       const result = await model.generateContent(prompt);
       const response = await result.response;

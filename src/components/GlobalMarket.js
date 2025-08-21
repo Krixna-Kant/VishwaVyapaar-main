@@ -19,7 +19,15 @@ import $ from 'jquery';
 window.$ = $;
 window.jQuery = $;
 
-// Add these constants
+const blue50   = '#eff6ff';
+const blue100  = '#dbeafe';
+const blue200  = '#bfdbfe';
+const blue400  = '#60a5fa';
+const blue500  = '#3b82f6';
+const blue600  = '#2563eb';
+const green500 = '#10b981';
+
+// Mock Data
 const WORLD_GEO_URL = "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
 
 const getCountryData = (countryName) => {
