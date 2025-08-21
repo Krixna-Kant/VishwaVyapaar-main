@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ClerkProvider } from '@clerk/clerk-react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Layout from './components/Layout';
+import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 import GlobalMarket from './components/GlobalMarket';
 import Assistant from './components/Assistant';
@@ -35,8 +36,10 @@ const App = () => {
       >
         <Router>
           <Routes>
+            <Route path="/" element={<LandingPage />} />
             <Route element={<Layout />}>
-              <Route path="/" element={<Dashboard />} />
+              
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/global-market" element={<GlobalMarket />} />
               <Route path="/assistant" element={<Assistant />} />
               <Route path="/profile" element={<Profile />} />
